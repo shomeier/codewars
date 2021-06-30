@@ -35,5 +35,19 @@ public class SolutionTest {
     public void testSomeUnderscoreLowerStart() {
         System.out.println("input: " + input);
         assertEquals(expectedResult, Solution.toCamelCase(input));
+        assertEquals(expectedResult, Solution2.toCamelCase(input));
+        assertEquals(expectedResult, Solution3.toCamelCase(input));
+    }
+
+    @Test
+    public void testSomeUnderscoreLowerStartSolution2() {
+        System.out.println("input: " + input);
+        assertEquals(expectedResult, Solution2.toCamelCase(input));
+    }
+
+    @Test
+    public void testSomeUnderscoreLowerStartSolution3() {
+        System.out.println("input: " + input);
+        assertEquals(expectedResult, Solution3.toCamelCase(input));
     }
 }
